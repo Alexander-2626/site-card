@@ -15,6 +15,7 @@ sub startup ($self) {
 
   # Normal route to controller
   $r->get('/')->to(cb => sub { shift->reply->static('index.html') });
+  $r->get('/example/welcome')->to('example#welcome');
 }
 
 1;

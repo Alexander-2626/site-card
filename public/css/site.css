@@ -1,0 +1,106 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  color: #08020e;
+  background: #f4f4f4;
+}
+
+.site-header {
+  background: #9cc0da;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-logo {
+  font-family: "Unbounded", Arial, sans-serif;
+  font-weight: 800;
+  color: #c4ff72;
+  background: #08020e;
+  padding: 6px 10px;
+  text-decoration: none;
+  line-height: 1.1;
+  font-size: 18px;
+}
+.site-logo span { display: block; font-size: 12px; color: #08020e; background: #c4ff72; padding: 0 4px; }
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.site-nav a {
+  color: #08020e;
+  text-decoration: none;
+  font-family: "Unbounded", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+.site-nav a:hover { text-decoration: underline; }
+
+.site-burger {
+  display: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 6px;
+}
+.site-burger span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  margin: 5px 0;
+  background: #08020e;
+}
+
+main { min-height: 60vh; }
+
+.site-footer {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 40px 20px;
+  color: #2c2c33;
+}
+.site-footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+.site-footer__nav a {
+  color: #2c2c33;
+  text-decoration: none;
+  font-family: "Unbounded", Arial, sans-serif;
+  font-weight: 600;
+}
+
+/* Адаптив: меню прячется за бургер на планшетах и телефонах */
+@media (max-width: 960px) {
+  .site-burger { display: block; }
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+    background: #9cc0da;
+  }
+  .site-nav.is-open { display: flex; }
+  .site-header__inner { position: relative; }
+}
