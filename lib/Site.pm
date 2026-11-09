@@ -14,7 +14,7 @@ sub startup ($self) {
   my $r = $self->routes;
 
   # Normal route to controller
-  $r->get('/')->to(cb => sub { shift->reply->static('index.html') });
+  $r->get('/')->to(cb => sub { shift->render('index') });
   $r->get('/example/welcome')->to('example#welcome');
 }
 
