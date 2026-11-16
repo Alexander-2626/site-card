@@ -14,3 +14,19 @@
     </div>
   </div>
 </section>
+<section class="stats">
+  <div class="stats__inner">
+    <div class="stats__item">
+      <div class="stats__num">37</div>
+      <div class="stats__label">моделей ИИ создано для сферы услуг</div>
+    </div>
+    <div class="stats__item">
+      <div class="stats__num">70</div>
+      <div class="stats__label">программ на базе ИИ создано для учебных центров крупнейшей транспортной компании</div>
+    </div>
+    <div class="stats__item">
+      <div class="stats__num">X2</div>
+      <div class="stats__label">выручка крупного Банка, после внедрения собственной модели ИИ</div>
+    </div>
+  </div>
+</section>
