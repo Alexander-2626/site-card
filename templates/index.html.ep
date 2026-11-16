@@ -81,3 +81,40 @@
     </div>
   </div>
 </section>
+<section class="tools">
+  <h2 class="tools__title">Все AI-инструменты для вашего бизнеса</h2>
+  <div class="tools__grid">
+    <a class="tool" href="/fulfillment" style="background-image:url('/img/tools/fulfillment.jpg')">
+      <span class="tool__name">Фулфилмент</span>
+      <span class="tool__btn">Подробнее</span>
+    </a>
+    <a class="tool" href="/restaurant" style="background-image:url('/img/tools/restaurant.jpg')">
+      <span class="tool__name">Рестораны<br>и кафе</span>
+      <span class="tool__btn">Подробнее</span>
+    </a>
+    <a class="tool" href="/marketplace" style="background-image:url('/img/tools/marketplace.jpg')">
+      <span class="tool__name">Маркетплейсы</span>
+      <span class="tool__btn">Подробнее</span>
+    </a>
+    <a class="tool" href="/production" style="background-image:url('/img/tools/production.jpg')">
+      <span class="tool__name">Производство</span>
+      <span class="tool__btn">Подробнее</span>
+    </a>
+    <a class="tool" href="/services" style="background-image:url('/img/tools/services.jpg')">
+      <span class="tool__name">Сфера услуг</span>
+      <span class="tool__btn">Подробнее</span>
+    </a>
+    <a class="tool" href="/officebusiness" style="background-image:url('/img/tools/officebusiness.png')">
+      <span class="tool__name">Офисные<br>бизнесы</span>
+      <span class="tool__btn">Подробнее</span>
+    </a>
+    <a class="tool" href="/transport" style="background-image:url('/img/tools/transport.png')">
+      <span class="tool__name">Логистика</span>
+      <span class="tool__btn">Подробнее</span>
+    </a>
+    <a class="tool" href="/development" style="background-image:url('/img/tools/development.jpg')">
+      <span class="tool__name">Строительство/<br>девелопмент/<br>недвижимость</span>
+      <span class="tool__btn">Подробнее</span>
+    </a>
+  </div>
+</section>
