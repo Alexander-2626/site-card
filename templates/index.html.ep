@@ -14,19 +14,42 @@
     </div>
   </div>
 </section>
-<section class="stats">
-  <div class="stats__inner">
-    <div class="stats__item">
-      <div class="stats__num">37</div>
-      <div class="stats__label">моделей ИИ создано для сферы услуг</div>
+<section class="tasks">
+  <div class="tasks__inner">
+    <div class="tasks__cards">
+      <div class="tasks__card tasks__card--light">
+        <a class="tasks__more" href="/company">узнать больше</a>
+        <span class="tasks__arrow">↗</span>
+        <h2 class="tasks__title">Решаем бизнес-задачи:</h2>
+        <p class="tasks__text">от чатов и автоматизации до анализа, прогнозов и контроля качества.</p>
+      </div>
+      <div class="tasks__card tasks__card--dark">
+        <span class="tasks__arrow tasks__arrow--accent">↗</span>
+        <h2 class="tasks__title">Наши преимущества:</h2>
+        <p class="tasks__text">быстрый аудит → быстрый запуск → ROI в 3–6 месяцев.</p>
+      </div>
     </div>
-    <div class="stats__item">
-      <div class="stats__num">70</div>
-      <div class="stats__label">программ на базе ИИ создано для учебных центров крупнейшей транспортной компании</div>
-    </div>
-    <div class="stats__item">
-      <div class="stats__num">X2</div>
-      <div class="stats__label">выручка крупного Банка, после внедрения собственной модели ИИ</div>
+    <div class="tasks__side">
+      <div class="tasks__stats">
+        <div class="stats__item">
+          <div class="stats__num">37</div>
+          <div class="stats__label">моделей ИИ создано для сферы услуг</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__num">70</div>
+          <div class="stats__label">программ на базе ИИ создано для учебных центров крупнейшей транспортной компании</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__num">X2</div>
+          <div class="stats__label">выручка крупного Банка, после внедрения собственной модели ИИ</div>
+        </div>
+      </div>
+      <nav class="tasks__nav">
+        <a href="/company">О нас</a>
+        <a href="/services">Услуги</a>
+        <a href="/education">Обучение</a>
+        <a href="/#contacts">Контакты</a>
+      </nav>
     </div>
   </div>
 </section>
