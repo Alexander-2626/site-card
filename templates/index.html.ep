@@ -53,3 +53,31 @@
     </div>
   </div>
 </section>
+<section class="process">
+  <div class="process__inner">
+    <h2 class="process__title">Как происходит внедрение?</h2>
+    <p class="process__lead">Существуют различные подходы к внедрению инновационных решений, каждый из которых ориентирован на конкретные потребности бизнеса:</p>
+    <div class="process__grid">
+      <div class="process__item">
+        <img src="/img/icons/audit.png" alt="">
+        <div class="process__name">Аудит процессов и целей</div>
+      </div>
+      <div class="process__item">
+        <img src="/img/icons/support.png" alt="">
+        <div class="process__name">Поддержка и развитие</div>
+      </div>
+      <div class="process__item">
+        <img src="/img/icons/select.png" alt="">
+        <div class="process__name">Подбор ИИ-решений</div>
+      </div>
+      <div class="process__item">
+        <img src="/img/icons/training.png" alt="">
+        <div class="process__name">Обучение персонала</div>
+      </div>
+      <div class="process__item">
+        <img src="/img/icons/integration.png" alt="">
+        <div class="process__name">Внедрение и интеграция</div>
+      </div>
+    </div>
+  </div>
+</section>

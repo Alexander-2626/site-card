@@ -271,3 +271,55 @@ main { min-height: 60vh; }
   .stats__num { font-size: 40px; }
   .tasks__nav { flex-wrap: wrap; gap: 16px; }
 }
+.process {
+  background: #08020e;
+  color: #fff;
+  padding: 140px 20px 160px;
+}
+.process__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.process__title {
+  font-family: "Unbounded", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+  margin: 0 0 90px;
+}
+.process__lead {
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 120px;
+}
+.process__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px 80px;
+  padding: 0 60px;
+}
+.process__item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.process__item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.process__name {
+  font-family: "Unbounded", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.25;
+}
+
+@media (max-width: 960px) {
+  .process__title { font-size: 28px; }
+  .process__grid { grid-template-columns: 1fr; padding: 0; }
+  .process__name { font-size: 20px; }
+}
