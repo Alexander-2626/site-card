@@ -7,13 +7,13 @@ body {
   background: #f4f4f4;
 }
 
+/* ---------- Шапка ---------- */
 .site-header {
   background: #9cc0da;
   position: sticky;
   top: 0;
   z-index: 10;
 }
-
 .site-header__inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -21,8 +21,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
-
 .site-logo {
   font-family: "Unbounded", Arial, sans-serif;
   font-weight: 800;
@@ -33,8 +33,13 @@ body {
   line-height: 1.1;
   font-size: 18px;
 }
-.site-logo span { display: block; font-size: 12px; color: #08020e; background: #c4ff72; padding: 0 4px; }
-
+.site-logo span {
+  display: block;
+  font-size: 12px;
+  color: #08020e;
+  background: #c4ff72;
+  padding: 0 4px;
+}
 .site-nav {
   display: flex;
   align-items: center;
@@ -48,7 +53,6 @@ body {
   font-size: 16px;
 }
 .site-nav a:hover { text-decoration: underline; }
-
 .site-burger {
   display: none;
   background: none;
@@ -64,47 +68,24 @@ body {
   background: #08020e;
 }
 
+/* ---------- Общие кнопки ---------- */
+.btn {
+  display: inline-block;
+  padding: 18px 40px;
+  border-radius: 30px;
+  font-family: "Interthing", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  border: 3px solid #08020e;
+}
+.btn--accent { background: #c4ff72; color: #08020e; }
+.btn--dark { background: #08020e; color: #fff; }
+.btn:hover { opacity: 0.85; }
+
 main { min-height: 60vh; }
 
-.site-footer {
-  background: #f4f4f4;
-  text-align: center;
-  padding: 40px 20px;
-  color: #2c2c33;
-}
-.site-footer__nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 16px;
-}
-.site-footer__nav a {
-  color: #2c2c33;
-  text-decoration: none;
-  font-family: "Unbounded", Arial, sans-serif;
-  font-weight: 600;
-}
-
-/* Адаптив: меню прячется за бургер на планшетах и телефонах */
-@media (max-width: 960px) {
-  .site-burger { display: block; }
-  .site-nav {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    padding: 20px;
-    background: #9cc0da;
-  }
-  .site-nav.is-open { display: flex; }
-  .site-header__inner { position: relative; }
-}
-
+/* ---------- Hero ---------- */
 .hero {
   background: #9cc0da;
   padding: 60px 20px;
@@ -135,28 +116,9 @@ main { min-height: 60vh; }
   margin: 0 0 40px;
 }
 .hero__buttons { display: flex; gap: 24px; flex-wrap: wrap; }
-.btn {
-  display: inline-block;
-  padding: 18px 40px;
-  border-radius: 30px;
-  font-family: "Interthing", Arial, sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  text-decoration: none;
-  border: 3px solid #08020e;
-}
-.btn--accent { background: #c4ff72; color: #08020e; }
-.btn--dark { background: #08020e; color: #fff; }
-.btn:hover { opacity: 0.85; }
 .hero__image img { max-width: 620px; width: 100%; height: auto; display: block; }
 
-@media (max-width: 960px) {
-  .hero__inner { flex-direction: column; text-align: center; }
-  .hero__title { font-size: 30px; }
-  .hero__buttons { justify-content: center; }
-  .hero__image img { max-width: 360px; }
-}
-
+/* ---------- Блок «Решаем бизнес-задачи» и статистика ---------- */
 .tasks {
   background: #f4f4f4;
   padding: 60px 20px 100px;
@@ -169,8 +131,6 @@ main { min-height: 60vh; }
   gap: 32px;
   align-items: start;
 }
-
-/* Левая часть: две карточки в ряд */
 .tasks__cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -185,7 +145,6 @@ main { min-height: 60vh; }
   flex-direction: column;
   justify-content: flex-end;
 }
-.tasks__more { white-space: nowrap; }
 .tasks__card--light { background: #c4ff72; color: #08020e; }
 .tasks__card--dark { background: #08020e; color: #fff; }
 .tasks__title {
@@ -211,6 +170,7 @@ main { min-height: 60vh; }
   color: #08020e;
   text-decoration: none;
   font-size: 18px;
+  white-space: nowrap;
 }
 .tasks__arrow {
   position: absolute;
@@ -220,8 +180,6 @@ main { min-height: 60vh; }
   line-height: 1;
 }
 .tasks__arrow--accent { color: #c4ff72; }
-
-/* Правая часть: статистика и навигация */
 .tasks__side {
   display: flex;
   flex-direction: column;
@@ -233,7 +191,6 @@ main { min-height: 60vh; }
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
-.stats__item { text-align: left; }
 .stats__num {
   font-family: "Unbounded", Arial, sans-serif;
   font-weight: 900;
@@ -247,7 +204,6 @@ main { min-height: 60vh; }
   line-height: 1.5;
   color: #5d5656;
 }
-
 .tasks__nav {
   display: flex;
   justify-content: space-around;
@@ -263,23 +219,13 @@ main { min-height: 60vh; }
   font-size: 20px;
 }
 
-/* Адаптив */
-@media (max-width: 960px) {
-  .tasks__inner { grid-template-columns: 1fr; }
-  .tasks__cards { grid-template-columns: 1fr; }
-  .tasks__stats { grid-template-columns: 1fr; gap: 24px; }
-  .stats__num { font-size: 40px; }
-  .tasks__nav { flex-wrap: wrap; gap: 16px; }
-}
+/* ---------- Как происходит внедрение ---------- */
 .process {
   background: #08020e;
   color: #fff;
   padding: 140px 20px 160px;
 }
-.process__inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+.process__inner { max-width: 1200px; margin: 0 auto; }
 .process__title {
   font-family: "Unbounded", Arial, sans-serif;
   font-weight: 800;
@@ -318,11 +264,7 @@ main { min-height: 60vh; }
   line-height: 1.25;
 }
 
-@media (max-width: 960px) {
-  .process__title { font-size: 28px; }
-  .process__grid { grid-template-columns: 1fr; padding: 0; }
-  .process__name { font-size: 20px; }
-}
+/* ---------- Все AI-инструменты ---------- */
 .tools {
   background: #f4f4f4;
   padding: 140px 20px 120px;
@@ -392,8 +334,206 @@ main { min-height: 60vh; }
 .tool:hover .tool__btn { opacity: 1; }
 .tool:hover .tool__name { transform: translateY(-20px); }
 
+/* ---------- Тарифные пакеты ---------- */
+.pricing {
+  background: #f4f4f4;
+  padding: 100px 20px 120px;
+}
+.pricing__inner { max-width: 1200px; margin: 0 auto; }
+.pricing__title {
+  font-family: "Unbounded", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  margin: 0 0 24px;
+}
+.pricing__lead {
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 620px;
+  margin: 0 0 60px;
+}
+.pricing__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.plan {
+  background: #9cc0da;
+  border-radius: 30px;
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  min-height: 460px;
+}
+.plan--featured { background: #c4ff72; }
+.plan__name {
+  font-family: "Unbounded", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.plan__price {
+  font-family: "Unbounded", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.plan__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.plan__list li {
+  padding-left: 18px;
+  position: relative;
+  margin-bottom: 8px;
+}
+.plan__list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+.plan__btn {
+  margin-top: 32px;
+  text-align: center;
+  color: #08020e;
+  background: #fff;
+  border-color: #08020e;
+  padding: 14px 20px;
+  font-size: 16px;
+}
+.plan__btn:hover { background: #08020e; color: #fff; }
+
+/* ---------- Подвал ---------- */
+.site-footer {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 40px 20px;
+  color: #2c2c33;
+}
+.site-footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+.site-footer__nav a {
+  color: #2c2c33;
+  text-decoration: none;
+  font-family: "Unbounded", Arial, sans-serif;
+  font-weight: 600;
+}
+
+/* ---------- Адаптив ---------- */
 @media (max-width: 960px) {
+  .site-burger { display: block; }
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+    background: #9cc0da;
+  }
+  .site-nav.is-open { display: flex; }
+
+  .hero__inner { flex-direction: column; text-align: center; }
+  .hero__title { font-size: 30px; }
+  .hero__buttons { justify-content: center; }
+  .hero__image img { max-width: 360px; }
+
+  .tasks__inner { grid-template-columns: 1fr; }
+  .tasks__cards { grid-template-columns: 1fr; }
+  .tasks__stats { grid-template-columns: 1fr; gap: 24px; }
+  .stats__num { font-size: 40px; }
+  .tasks__nav { flex-wrap: wrap; gap: 16px; }
+
+  .process__title, .tools__title, .pricing__title { font-size: 28px; }
+  .process__grid { grid-template-columns: 1fr; padding: 0; }
+  .process__name { font-size: 20px; }
+
   .tools__grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
   .tool { height: 360px; }
-  .tools__title { font-size: 28px; }
+
+  .pricing__grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
+  .pricing__grid { grid-template-columns: 1fr; }
+}
+.approach {
+  background: #f4f4f4;
+  padding: 120px 20px 100px;
+}
+.approach__inner { max-width: 1200px; margin: 0 auto; }
+.approach__title {
+  font-family: "Unbounded", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1.25;
+  text-align: center;
+  margin: 0 0 80px;
+}
+.approach__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.approach__card {
+  background: #9cc0da;
+  border-radius: 30px;
+  padding: 32px;
+  color: #08020e;
+}
+.approach__card--dark {
+  background: #08020e;
+  color: #fff;
+}
+.approach__name {
+  font-family: "Unbounded", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+.approach__list {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+.approach__list li { margin-bottom: 8px; }
+.approach__cta {
+  margin-top: 80px;
+  text-align: center;
+}
+.approach__cta-title {
+  font-family: "Unbounded", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 1.3;
+  margin: 0 0 32px;
+  color: #08020e;
+}
+.approach__cta p {
+  max-width: 760px;
+  margin: 0 auto 40px;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #08020e;
+}
+
+@media (max-width: 960px) {
+  .approach__grid { grid-template-columns: 1fr; }
+  .approach__title { font-size: 28px; }
+  .approach__cta-title { font-size: 22px; }
 }
