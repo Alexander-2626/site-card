@@ -537,3 +537,70 @@ main { min-height: 60vh; }
   .approach__title { font-size: 28px; }
   .approach__cta-title { font-size: 22px; }
 }
+.about-edu {
+  background: #f4f4f4;
+  padding: 100px 20px 120px;
+}
+.about-edu__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.about__card,
+.education-block {
+  border-radius: 30px;
+  padding: 60px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.about__card {
+  background: #c4ff72;
+  color: #08020e;
+}
+.education-block {
+  background: #08020e;
+  color: #fff;
+}
+.about__title,
+.education-block__title {
+  font-family: "Unbounded", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 0 0 24px;
+}
+.about__text,
+.education-block__text {
+  font-size: 19px;
+  line-height: 1.5;
+  margin: 0 0 40px;
+  flex-grow: 1;
+}
+.about__btn,
+.education-block__btn {
+  display: inline-block;
+  padding: 16px 44px;
+  border-radius: 30px;
+  font-family: "Interthing", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  border: 3px solid #08020e;
+  align-self: center;
+}
+.about__btn {
+  background: #08020e;
+  color: #c4ff72;
+}
+.education-block__btn {
+  background: #c4ff72;
+  color: #08020e;
+}
+
+@media (max-width: 960px) {
+  .about-edu__inner { grid-template-columns: 1fr; }
+  .about__title, .education-block__title { font-size: 28px; }
+}
