@@ -604,3 +604,39 @@ main { min-height: 60vh; }
   .about-edu__inner { grid-template-columns: 1fr; }
   .about__title, .education-block__title { font-size: 28px; }
 }
+.contact {
+  background: #9cc0da;
+  padding: 100px 20px 120px;
+}
+.contact__inner { max-width: 1200px; margin: 0 auto; }
+.contact__card {
+  background: #f4f4f4;
+  border-radius: 30px;
+  padding: 90px 60px;
+  text-align: center;
+}
+.contact__title {
+  font-family: "Unbounded", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 1.2;
+  margin: 0 0 32px;
+}
+.contact__text {
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 720px;
+  margin: 0 auto 48px;
+}
+.contact__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 960px) {
+  .contact__card { padding: 56px 24px; }
+  .contact__title { font-size: 30px; }
+  .contact__text { font-size: 18px; }
+}

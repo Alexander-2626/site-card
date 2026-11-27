@@ -235,3 +235,15 @@
     </div>
   </div>
 </section>
+<section class="contact">
+  <div class="contact__inner">
+    <div class="contact__card">
+      <h2 class="contact__title">Связаться с нами</h2>
+      <p class="contact__text">Хотите задать вопрос, предложить сотрудничество или оставить отзыв? Мы будем рады услышать вас! Напишите нам удобным способом:</p>
+      <div class="contact__buttons">
+        <a class="btn btn--accent" href="#popup">Оставить заявку</a>
+        <a class="btn btn--dark" href="https://t.me/AI_vnedri">Написать нам</a>
+      </div>
+    </div>
+  </div>
+</section>
